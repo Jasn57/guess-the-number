@@ -9,7 +9,6 @@ local guess = io.read("*number")
 if guess == secretNumber then
 
     print("You guessed it!") 
-    player:AddMoney(100)
 
 else 
 
