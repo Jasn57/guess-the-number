@@ -1,0 +1,53 @@
+-- Define the addition function
+function add(a, b)
+    return a + b
+end
+
+-- Define the subtraction function
+function subtract(a, b)
+    return a - b
+end
+
+-- Define the multiplication function
+function multiply(a, b)
+    return a * b
+end
+
+-- Define the division function
+function divide(a, b)
+    if b ~= 0 then
+        return a / b
+    else
+        return "Error: Division by zero"
+    end
+end
+
+-- Function to execute the calculation based on user input
+function calculate()
+    io.write("Enter the first number: ")
+    local num1 = tonumber(io.read())
+    
+    io.write("Enter the second number: ")
+    local num2 = tonumber(io.read())
+    
+    io.write("Enter the operator (+, -, *, /): ")
+    local operator = io.read()
+    
+    local result
+    if operator == "+" then
+        result = add(num1, num2)
+    elseif operator == "-" then
+        result = subtract(num1, num2)
+    elseif operator == "*" then
+        result = multiply(num1, num2)
+    elseif operator == "/" then
+        result = divide(num1, num2)
+    else
+        result = "Invalid operator"
+    end
+    
+    print("Result: " .. result)
+end
+
+-- Run the calculator
+calculate()
