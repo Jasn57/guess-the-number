@@ -44,5 +44,4 @@ local function calculate()
     print("Result: " .. result)
 end
 
--- Run the calculator
 calculate()
