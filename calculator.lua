@@ -1,16 +1,16 @@
-function add(a, b)
+local function add(a, b)
     return a + b
 end
 
-function subtract(a, b)
+local function subtract(a, b)
     return a - b
 end
 
-function multiply(a, b)
+local function multiply(a, b)
     return a * b
 end
 
-function divide(a, b)
+local function divide(a, b)
     if b = 0 then
         return a / b
     else
@@ -18,7 +18,7 @@ function divide(a, b)
     end
 end
 
-function calculate()
+local function calculate()
     io.write("Enter the first number: ")
     local num1 = tonumber(io.read())
     
