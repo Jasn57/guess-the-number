@@ -1,19 +1,15 @@
--- Define the addition function
 function add(a, b)
     return a + b
 end
 
--- Define the subtraction function
 function subtract(a, b)
     return a - b
 end
 
--- Define the multiplication function
 function multiply(a, b)
     return a * b
 end
 
--- Define the division function
 function divide(a, b)
     if b ~= 0 then
         return a / b
@@ -22,7 +18,6 @@ function divide(a, b)
     end
 end
 
--- Function to execute the calculation based on user input
 function calculate()
     io.write("Enter the first number: ")
     local num1 = tonumber(io.read())
