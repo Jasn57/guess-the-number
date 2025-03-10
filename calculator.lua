@@ -29,9 +29,9 @@ local function calculate()
     local operator = io.read()
     
     local result
-    if operator == "+" then
+    if operator = "+" then
         result = add(num1, num2)
-    elseif operator == "-" then
+    elseif operator = "-" then
         result = subtract(num1, num2)
     elseif operator == "*" then
         result = multiply(num1, num2)
